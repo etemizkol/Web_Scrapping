@@ -2,6 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
+# Main goal: Collecting vehicle variables in GTA Online from https://gta.fandom.com/
+# To do this first i need to collect every vehicles link. There is a page that has every vehicles link : https://gta.fandom.com/wiki/Vehicles_in_GTA_Online
+# then crawl between this links to get variables
+
 # Getting vehicle links
 soup = BeautifulSoup(requests.get("https://gta.fandom.com/wiki/Vehicles_in_GTA_Online").content, features="html.parser")
 print(soup)
