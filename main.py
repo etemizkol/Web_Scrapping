@@ -60,8 +60,10 @@ car_dict = {"Model": [], "Type": [], "Vehicle class(GTA V/GTA Online)": [], "Veh
 
 creating_car_dict(links,car_dict)
 
-for key in car_dict:
-    print(key,len(car_dict[key]))
+#checking variables len for creating df safely
+#for key in car_dict:
+#    print(key,len(car_dict[key]))
+
 df = pd.DataFrame.from_dict(car_dict)
 df.head()
 
