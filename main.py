@@ -72,3 +72,5 @@ df = pd.DataFrame.from_dict(car_dict)
 df.head()
 
 df.to_csv('car_datas.csv')
+# Here is the kaggle link:
+# https://www.kaggle.com/emirhantemizkol/grand-theft-auto-online-car-dataset
